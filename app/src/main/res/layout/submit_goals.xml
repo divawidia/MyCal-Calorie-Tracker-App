@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_bg1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Sekarang Masukan Targetmu!"
+            android:textColor="@color/colorBlack"
+            android:textSize="30sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp">
+        </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Target Berat Badan :"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp">
+            </TextView>
+            <EditText
+                android:id="@+id/targetBerat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorGray"
+                android:layout_marginLeft="10dp"
+                android:ems="3"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/textViewKg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="@string/kg" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Saya Ingin :"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp">
+        </TextView>
+        <Spinner
+            android:id="@+id/spinnerTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rect"
+            android:textColor="@color/colorGray"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="30dp"
+            android:entries="@array/array_weekly_goals"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="30dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Target perminggu :"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp">
+            </TextView>
+            <Spinner
+                android:id="@+id/spinnerTargetPerMinggu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorGray"
+                android:entries="@array/array_weekly_goals_kg"
+                />
+            <TextView
+                android:id="@+id/textViewKgPerMinggu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Kg/Minggu" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonGoalSubmit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_signup"
+            android:text="Ayo Mulai!"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold">
+        </Button>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottom_bg1"
+        android:layout_alignParentBottom="true">
+    </ImageView>
+</RelativeLayout>

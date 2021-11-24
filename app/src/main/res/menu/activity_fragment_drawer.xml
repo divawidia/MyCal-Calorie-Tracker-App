@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/user"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_goal"
+            android:icon="@drawable/ic_menu_goal"
+            android:title="@string/goal" />
+        <item
+            android:id="@+id/nav_riwayat"
+            android:icon="@drawable/history"
+            android:title="@string/riwayat" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_menu_categories"
+            android:title="@string/categories" />
+        <item
+            android:id="@+id/nav_food"
+            android:icon="@drawable/fork"
+            android:title="@string/food" />
+        <item
+            android:id="@+id/nav_webview1"
+            android:icon="@drawable/idea"
+            android:title="@string/webview_menu1" />
+        <item
+            android:id="@+id/nav_webview2"
+            android:icon="@drawable/idea"
+            android:title="@string/webview_menu2" />
+        <item
+            android:id="@+id/nav_webview3"
+            android:icon="@drawable/idea"
+            android:title="@string/webview_menu3" />
+        <item
+            android:id="@+id/nav_webview4"
+            android:icon="@drawable/idea"
+            android:title="@string/webview_menu4"/>
+    </group>
+</menu>
+
